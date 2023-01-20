@@ -1,0 +1,457 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.26)  20 JAN 2023 19:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./relazione_bedei.tex
+(relazione_bedei.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-08-23>
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/07/20 3.78 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen139
+\l@unhyphenated=\language79
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.l
+df
+Language: italian 2022/03/27 v.1.4.07 Italian support for the babel system
+\it@lettering=\count196
+\it@doublequoteactive=\count197
+\it@ISOcompliance=\count198
+))
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/it\babel
+-italian.tex
+Package babel Info: Importing font and identification data for italian
+(babel)             from babel-it.ini. Reported on input line 11.
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudoc
+ode.sty
+Package: algpseudocode 
+ (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmi
+cx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count266
+\c@ALG@rem=\count267
+\c@ALG@nested=\count268
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
+\c@ALG@Lnr=\count269
+\c@ALG@blocknr=\count270
+\c@ALG@storecount=\count271
+\c@ALG@tmpcounter=\count272
+\ALG@tmplength=\skip51
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
+y
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+ (C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count273
+\float@exts=\toks17
+\float@box=\box51
+\@float@everytoks=\toks18
+\@floatcapt=\box52
+)
+\@float@every@algorithm=\toks19
+\c@algorithm=\count274
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-08-23 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count275
+\l__pdf_internal_box=\box53
+) (relazione_bedei.aux)
+\openout1 = `relazione_bedei.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Redefining \it@ocap on input line 13.
+LaTeX Info: Redefining \it@ccap on input line 13.
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count276
+\scratchdimen=\dimen142
+\scratchbox=\box54
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen143
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks21
+)
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\andre\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+ [1
+
+{C:/Users/andre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(relazione_bedei.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+ [1
+
+])
+\tf@toc=\write3
+\openout3 = `relazione_bedei.toc'.
+
+ [2] (relazione_bedei.lof)
+\tf@lof=\write4
+\openout4 = `relazione_bedei.lof'.
+
+ [3
+
+]
+Capitolo 1.
+[4
+
+] [5]
+Capitolo 2.
+<img/genesis.png, id=31, 258.9675pt x 57.816pt>
+File: img/genesis.png Graphic file (type png)
+<use img/genesis.png>
+Package pdftex.def Info: img/genesis.png  used on input line 42.
+(pdftex.def)             Requested size: 227.62204pt x 50.81999pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
+
+ []
+
+<img/blkc.png, id=33, 268.00125pt x 74.07675pt>
+File: img/blkc.png Graphic file (type png)
+<use img/blkc.png>
+Package pdftex.def Info: img/blkc.png  used on input line 50.
+(pdftex.def)             Requested size: 227.62204pt x 62.91579pt.
+[6
+
+ <./img/genesis.png> <./img/blkc.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+[7]
+<img/fork.png, id=43, 222.8325pt x 118.64325pt>
+File: img/fork.png Graphic file (type png)
+<use img/fork.png>
+Package pdftex.def Info: img/fork.png  used on input line 68.
+(pdftex.def)             Requested size: 227.62204pt x 121.19371pt.
+ [8 <./img/fork.png>]
+Capitolo 3.
+<img/smrt.png, id=48, 671.50874pt x 379.4175pt>
+File: img/smrt.png Graphic file (type png)
+<use img/smrt.png>
+Package pdftex.def Info: img/smrt.png  used on input line 81.
+(pdftex.def)             Requested size: 227.62204pt x 128.61234pt.
+[9
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 98.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 98.
+ [10 <./img/smrt.png>] [11] [12]
+Capitolo 4.
+[13
+
+]
+<img/ac.png, id=69, 230.66174pt x 92.14426pt>
+File: img/ac.png Graphic file (type png)
+<use img/ac.png>
+Package pdftex.def Info: img/ac.png  used on input line 142.
+(pdftex.def)             Requested size: 199.16928pt x 79.56447pt.
+<img/ndi.png, id=70, 236.082pt x 86.12175pt>
+File: img/ndi.png Graphic file (type png)
+<use img/ndi.png>
+Package pdftex.def Info: img/ndi.png  used on input line 149.
+(pdftex.def)             Requested size: 256.0748pt x 93.42142pt.
+ [14 <./img/ac.png>]
+<img/hs.png, id=75, 1927.2pt x 1226.5825pt>
+File: img/hs.png Graphic file (type png)
+<use img/hs.png>
+Package pdftex.def Info: img/hs.png  used on input line 161.
+(pdftex.def)             Requested size: 270.30118pt x 172.01984pt.
+ [15 <./img/ndi.png> <./img/hs.png>]
+<img/tx-block.png, id=81, 957.5775pt x 363.3575pt>
+File: img/tx-block.png Graphic file (type png)
+<use img/tx-block.png>
+Package pdftex.def Info: img/tx-block.png  used on input line 179.
+(pdftex.def)             Requested size: 256.0748pt x 97.16528pt.
+ [16 <./img/tx-block.png>]
+<img/mm.png, id=86, 850.97925pt x 489.62926pt>
+File: img/mm.png Graphic file (type png)
+<use img/mm.png>
+Package pdftex.def Info: img/mm.png  used on input line 190.
+(pdftex.def)             Requested size: 256.0748pt x 147.33817pt.
+<img/block.png, id=87, 746.79pt x 409.53pt>
+File: img/block.png Graphic file (type png)
+<use img/block.png>
+Package pdftex.def Info: img/block.png  used on input line 200.
+(pdftex.def)             Requested size: 336.05238pt x 184.28679pt.
+ [17 <./img/mm.png>] [18 <./img/block.png>]
+<img/gas.png, id=98, 1931.215pt x 529.98pt>
+File: img/gas.png Graphic file (type png)
+<use img/gas.png>
+Package pdftex.def Info: img/gas.png  used on input line 231.
+(pdftex.def)             Requested size: 256.0748pt x 70.27457pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+
+ []
+
+[19 <./img/gas.png (PNG copy)>] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 262--266
+
+ []
+
+[21]
+<img/elliptic-curve.png, id=112, 391.4625pt x 466.74374pt>
+File: img/elliptic-curve.png Graphic file (type png)
+<use img/elliptic-curve.png>
+Package pdftex.def Info: img/elliptic-curve.png  used on input line 277.
+(pdftex.def)             Requested size: 113.81102pt x 135.69406pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
+
+ []
+
+[22 <./img/elliptic-curve.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+<img/s.png, id=116, 421.575pt x 144.54pt>
+File: img/s.png Graphic file (type png)
+<use img/s.png>
+Package pdftex.def Info: img/s.png  used on input line 300.
+(pdftex.def)             Requested size: 227.62204pt x 78.04381pt.
+[23 <./img/s.png>]
+<img/E.png, id=121, 421.575pt x 144.54pt>
+File: img/E.png Graphic file (type png)
+<use img/E.png>
+Package pdftex.def Info: img/E.png  used on input line 324.
+(pdftex.def)             Requested size: 227.62204pt x 78.04381pt.
+ [24 <./img/E.png>] [25]
+Capitolo 5.
+[26
+
+]
+<img/pos.png, id=135, 372.1905pt x 175.25475pt>
+File: img/pos.png Graphic file (type png)
+<use img/pos.png>
+Package pdftex.def Info: img/pos.png  used on input line 380.
+(pdftex.def)             Requested size: 227.62204pt x 107.18066pt.
+ [27 <./img/pos.png>]
+<img/imgPoS.png, id=140, 340.27126pt x 121.05225pt>
+File: img/imgPoS.png Graphic file (type png)
+<use img/imgPoS.png>
+Package pdftex.def Info: img/imgPoS.png  used on input line 403.
+(pdftex.def)             Requested size: 227.62204pt x 80.97713pt.
+ [28] [29 <./img/imgPoS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--449
+
+ []
+
+[30]
+<img/ethash.jpg, id=152, 903.375pt x 849.1725pt>
+File: img/ethash.jpg Graphic file (type jpg)
+<use img/ethash.jpg>
+Package pdftex.def Info: img/ethash.jpg  used on input line 453.
+(pdftex.def)             Requested size: 227.62204pt x 213.9641pt.
+ [31 <./img/ethash.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 491--493
+
+ []
+
+[33] [34]
+<img/ghs.png, id=165, 238.491pt x 59.0205pt>
+File: img/ghs.png Graphic file (type png)
+<use img/ghs.png>
+Package pdftex.def Info: img/ghs.png  used on input line 514.
+(pdftex.def)             Requested size: 284.52756pt x 70.41895pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--524
+
+ []
+
+[35 <./img/ghs.png>]
+<img/esGHOST.png, id=170, 152.36925pt x 163.20975pt>
+File: img/esGHOST.png Graphic file (type png)
+<use img/esGHOST.png>
+Package pdftex.def Info: img/esGHOST.png  used on input line 546.
+(pdftex.def)             Requested size: 199.16928pt x 213.35057pt.
+ [36 <./img/esGHOST.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
+
+ []
+
+[37] [38]
+Capitolo 6.
+[39
+
+] (relazione_bedei.aux) ) 
+Here is how much of TeX's memory you used:
+ 3802 strings out of 477843
+ 61841 string characters out of 2823599
+ 382713 words of memory out of 3000000
+ 22673 multiletter control sequences out of 15000+600000
+ 486323 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,8n,62p,1173b,287s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\eccc1095.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\andre\AppData\Local\MiKTeX\font
+s/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\andre\AppData\Local\MiKTe
+X\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\andre\AppData\Local
+\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\andre\AppData
+\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\andre\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\a
+ndre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\U
+sers\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
+ <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm10
+95.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecbx1095.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\ecbx2488.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecrm1200.pk> <C:\Users\andre\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecrm2488.pk><C:/Users/andre/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/andre/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/andre/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/andre/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/andre/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
+andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y6.pfb><C:/Users/andre/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb>
+Output written on relazione_bedei.pdf (40 pages, 1073590 bytes).
+PDF statistics:
+ 631 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+
