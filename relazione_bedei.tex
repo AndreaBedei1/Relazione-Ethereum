@@ -1,19 +1,25 @@
 \documentclass[a4paper,11pt]{report}
 \usepackage[T1]{fontenc}
 \usepackage[italian]{babel}
+\usepackage{times}
 \usepackage{graphicx}
 \usepackage{algpseudocode}
 \usepackage{algorithm}
-
+\usepackage{algorithmicx}
 
 \title{\Huge RELAZIONE ETHEREUM}
 \author{Andrea Bedei}
-\date{30 Ottobre 2022}
+\date{1 Aprile 2023}
 
+\setcounter{tocdepth}{4}
 \begin{document}
 \maketitle
 \tableofcontents
 \listoffigures
+
+\begin{abstract}% Abstract
+In questa relazione si andrà a parlare del mondo delle blockchain e delle criptovalute, nella prima parte vengono descritte le caratteristiche principali e gli elementi base, alcuni anche visti a lezione. Poi si approfondiscono per quanto riguarda specificatamente il mondo Etherium, con algoritmi di criptaggio, specifiche dettagliate della rete. In aggiunta nel documento vengono descritte entrambe le strategie di convalida delle transazioni nonostante nel settembre 2022 la mainnet di Ethereum si è fusa con la Beacon Chain, completando la transizione della blockchain dalla proof of work alla proof of stake.
+\end{abstract}
 
 \chapter{Introduzione}
 La criptovaluta è una nuova forma di denaro digitale alimentata dalla crittografia. Tutto è iniziato con Bitcoin, il quale permise di inviare fondi ovunque nel mondo senza l'uso di intermediari, cioè evitando che la nostra operazione passasse sotto un'autorità centrale come una banca o un governo, in modo tale che nessuno potesse sorvegliare, censurare o annullare le transazioni e soprattutto al fine di non condividere i nostri dati personali con terze parti.
@@ -41,7 +47,7 @@ La blockchain può essere definita come un registro digitale distribuito, in gra
 \begin{center}
 \includegraphics[width=8cm]{img/genesis.png} 
 \end{center}
-\caption{Rappresentazione degli stati della blockchain}
+\caption{Rappresentazione degli stati della blockchain \cite{genesis}}
 \end{figure}
 \\Dopo aver scritto i dati in un blocco non possono essere modificati senza che vengano alterati tutti i blocchi successivi, questo per la natura del protocollo e dello schema di validazione, infatti l'unico modo per farlo necessiterebbe del consenso della maggioranza della rete. La blockchain è quindi rappresentabile come una grande catena di blocchi collegati tra loro e resi sicuri attraverso la crittografia. In ogni blocco possono essere presenti una o più transazioni e contiene un puntatore hash al blocco precedente e una marca temporale. \\
 
@@ -49,7 +55,7 @@ La blockchain può essere definita come un registro digitale distribuito, in gra
 \begin{center}
 \includegraphics[width=8cm]{img/blkc.png} 
 \end{center}
-\caption{Rappresentazione dei blocchi della blockchain}
+\caption{Rappresentazione dei blocchi della blockchain. \cite{genesis}}
 \end{figure}
 
 \newpage
@@ -67,7 +73,7 @@ A livello di Blockchain, bisogna garantire che la tecnologia di registro distrib
 \begin{center}
 \includegraphics[width=8cm]{img/fork.png} 
 \end{center}
-\caption{Esempio di fork.}
+\caption{Esempio di fork. \cite{genesis}}
 \end{figure}
 
 \chapter{Smart contract}
@@ -80,7 +86,7 @@ Durante il  corso del tempo la definizione di contratto intelligente è variata.
 \begin{center}
 \includegraphics[width=8cm]{img/smrt.png} 
 \end{center}
-\caption{Vista generica sul concetto di smart contract.}
+\caption{Vista generica sul concetto di smart contract.\cite{smartContract}}
 \end{figure}
 
 
@@ -105,7 +111,7 @@ La più popolare blockchain per l'esecuzione di smart contract è Ethereum. Su d
 I processi su una blockchain sono deterministici, in modo da garantire la tolleranza ai guasti. Tuttavia, l'applicazione degli smart contract nel mondo reale richiede della casualità, ad esempio come nei giochi dei casinò. Infatti, la tecnologia blockchain riduce i costi per lo svolgimento di questi giochi. La casualità sulla blockchain può essere implementata utilizzando block hash oppure degli smart contract speciali, un esempio è RANDAO.
 
 \section{Registro pubblico e privacy per Ethereum}
-Visto che gli smart contract di Ethereum si basano su una blockchain pubblica chiunque può monitorare in qualsiasi momento i trasferimenti di risorse. Un esempio è il fatto che chiunque può in ogni momento controllare se qualcuno ha inviato del denaro al suo indirizzo. Tutto questo però non influisce sulla privacy, questo perchè Ethereum è una rete pseudonima, cioè le transazioni sono pubblicamente legate a un indirizzo crittografico univoco e non all'identità della persona. In questo modo possiamo proteggere la privacy delle persone dagli osservatori.
+Visto che gli smart contract di Ethereum si basano su una blockchain pubblica chiunque può monitorare in qualsiasi momento i trasferimenti di risorse. Un esempio è il fatto che chiunque può in ogni momento controllare se qualcuno ha inviato del denaro al suo indirizzo. Tutto questo però non influisce sulla privacy, questo perché Ethereum è una rete pseudonima, cioè le transazioni sono pubblicamente legate a un indirizzo crittografico univoco e non all'identità della persona. In questo modo possiamo proteggere la privacy delle persone dagli osservatori.
 
 \section{Problemi di sicurezza}
 Uno smart contract basato su blockchain è visibile a tutti gli utenti della blockchain stessa. Tuttavia, questo crea una situazione in cui i bug sono visibili a tutti e questo può portare attacchi da parte di persone malevole.
@@ -141,14 +147,14 @@ A differenza degli EOA, gli account a contratto non possono inviare transazioni 
 \begin{center}
 \includegraphics[width=7cm]{img/ac.png} 
 \end{center}
-\caption{Tipi di account.}
+\caption{Tipi di account. \cite{genesis}}
 \end{figure}
 \\Per quanto riguarda le similitudini, entrambi i tipi di account hanno uno \textbf{stato} in cui viene memorizzato: il nonce (numero di transazioni provenienti dall'indirizzo), il saldo delle risorse e l'hash del nodo radice dell'albero, l'hash del nodo corrente e tutti gli stati memorizzati. \\
 \begin{figure}[htbp] 
 \begin{center}
 \includegraphics[width=9cm]{img/ndi.png} 
 \end{center}
-\caption{Contenuto informativo dell'account.}
+\caption{Contenuto informativo dell'account. \cite{genesis}}
 \end{figure}
 
 \section{Stato a livello mondiale}
@@ -160,7 +166,7 @@ Per dimostrare che un nodo foglia fa parte di un determinato albero hash binario
 \begin{center}
 \includegraphics[width=9.5cm]{img/hs.png} 
 \end{center}
-\caption{Albero di Merkle Patricia.}
+\caption{Albero di Merkle Patricia. \cite{albero}}
 \end{figure}
 \newpage
 I dati della parte inferiore vengono generati suddividendo in porzioni i dati che vogliamo archiviare, quindi prendendo l'hash di ciascuna sezione e ripeteremo il processo fino a quando il numero totale di hash rimanenti diventa uno solo, cioè l'hash radice.\\
@@ -178,7 +184,7 @@ Affinché tutti i blocchi della rete siano sincronizzati, le transazioni vengono
 \begin{center}
 \includegraphics[width=9cm]{img/tx-block.png} 
 \end{center}
-\caption{Struttura del blocco.}
+\caption{Struttura del blocco. \cite{ether}}
 \end{figure}
 \\Quindi i blocchi sono ordinati in modo rigoroso, così come anche le transazioni all'interno del singolo blocco.
 
@@ -189,7 +195,7 @@ Affinché tutti i blocchi della rete siano sincronizzati, le transazioni vengono
 \begin{center}
 \includegraphics[width=9cm]{img/mm.png} 
 \end{center}
-\caption{Primi due blocchi di una blockchain.}
+\caption{Primi due blocchi di una blockchain. \cite{mine}}
 \end{figure} 
 Tutti i partecipanti delle rete cooperano per raggruppare le nuove transazioni del nuovo blocco e dopo averlo realizzato (Mining), il nuovo blocco viene propagato al resto della rete. Il nodo viene infatti inserito in fondo alla catena e il processo di mining continua. Tale processo, definito anche processo di consenso, viene illustrato nel protocollo di Ethereum denominato Proof of work.\\
 I nodi attivi di mining usano una quantità variabile di tempo, di energia, ma sopratutto di potenza di calcolo per produrre un cosiddetto certificato di legittimità per il blocco che propagano sulla rete. Questo processo aiuta a proteggere il sistema da attacchi spam e DoS, anche perchè questi certificati sono costosi da produrre.\\
@@ -197,12 +203,18 @@ Gli altri miner (coloro che non hanno convalidato il blocco) ricevono un messagg
 La quantità esatta di tempo richiesta da ogni miner per la creazione del certificato varia casualmente con elevata frequenza. Questo rende impossibile che due miner convalidino contemporaneamente un blocco successivo proposto e ciò fa sì che il blocco venga accettato come blocco successivo senza conflitti. Comunque, anche se accedesse che due blocchi vengano convalidati nello stesso istante, esiste un protocollo di risoluzione.
 
 \subsection{Contenuto di un blocco}
-\includegraphics[scale=0.45]{img/block.png} 
-\\Al suo interno un blocco contiene:
+\begin{figure}[htbp] 
+\begin{center}
+\includegraphics[scale=0.45]{img/block.png}
+\end{center}
+\caption{Elementi del blocco. \cite{block}}
+\end{figure} 
+
+Al suo interno un blocco contiene:
 \begin{itemize} % elenco puntato
 \item \textbf{Timestamp:} orario in cui il blocco è stato minato.
 \item \textbf{BlockNumber:} numero del blocco, che corrisponde alla lunghezza della blockchain.
-\item \textbf{BaseFeePerGas:} commissione minima in gas(piccola tassa pagata dagli utenti per compensare l'utilizzo di energia elttrica per l'elabprazione) affinché una transazione venga inclusa nel blocco.
+\item \textbf{BaseFeePerGas:} commissione minima in gas(piccola tassa pagata dagli utenti per compensare l'utilizzo di energia elttrica per l'elaborazione) affinché una transazione venga inclusa nel blocco.
 \item \textbf{Difficulty:} quantità di lavoro necessaria per minare il blocco.
 \item \textbf{MixHash:} identificatore unico per il blocco.
 \item \textbf{ParentHash:} identificatore unico per il blocco precedente.
@@ -230,9 +242,14 @@ Il prezzo del carburante è la quantità di Ether che le persone sono disposte a
 \begin{center}
 \includegraphics[width=9cm]{img/gas.png} 
 \end{center}
-\caption{Struttura del meccanismo delle commissioni.}
-\end{figure} 
+\caption{Struttura del meccanismo delle commissioni. \cite{genesis}}
+\end{figure}
 
+\subsubsection{Tecnologia chiamata zk-SNARKs}
+La tecnologia chiamata zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) è una forma di crittografia a zero conoscenza utilizzata per dimostrare la conoscenza di una determinata informazione senza doverla rivelare effettivamente.\\ In pratica, questo significa che con zk-SNARKs è possibile dimostrare di avere una determinata informazione, come ad esempio una password, senza rivelare la password stessa o qualsiasi altra informazione associata. Ciò è reso possibile utilizzando una combinazione di tecniche di crittografia avanzate, come la crittografia asimmetrica, la firma digitale e la crittografia a curva ellittica.\\
+In Ethereum, gli zk-SNARKs vengono utilizzati per fornire un livello di privacy alle transazioni attraverso la funzionalità "private transactions". In questa funzionalità, gli zk-SNARKs vengono utilizzati per dimostrare la correttezza di una transazione senza rivelare alcuna informazione associata ad essa, come l'importo della transazione o il destinatario.\\ In pratica, una transazione privata in Ethereum utilizza uno smart contract di verifica della transazione. Questo contratto intelligente richiede una prova della correttezza della transazione sotto forma di una prova zk-SNARK. Essa viene creata dall'utente che effettua la transazione utilizzando i dati della relativa transazione, come l'importo e il destinatario, insieme a un insieme di parametri pubblici.\\ La creazione della prova zk-SNARK è un processo complesso che richiede una serie di passaggi matematici, tra cui la creazione di un circuito aritmetico, la generazione di chiavi pubbliche e private, e la creazione della prova stessa. Tuttavia, una volta che la prova zk-SNARK è stata creata, può essere utilizzata per dimostrare la correttezza della transazione senza rivelare alcuna informazione associata ad essa.\\
+Quando la prova zk-SNARK viene presentata al contratto intelligente di verifica della transazione, il contratto esegue una verifica della prova per confermare che la transazione sia corretta. Se la prova è valida, il contratto intelligente attiva la transazione e la trasferisce sulla blockchain, senza rivelare alcuna informazione associata alla transazione.\\
+In questo modo, gli zk-SNARKs offrono una forma di privacy per le transazioni su Ethereum, consentendo agli utenti di effettuare transazioni senza dover rivelare informazioni sensibili a terze parti.
 
 
 \subsection{Tempo di blocco e dimensione}
@@ -250,7 +267,7 @@ Ora elenchiamo passo dopo passo come si svolge il mining delle transazioni Ether
 \item Come primo passo l'utente firma una richiesta di transazione con la chiave privata del proprio account. Questo prova che la transazione sia stata creata dal mittente. Il processo di firma viene gestito da un client chiamato Geth. 
 \item L'utente poi trasmette la richiesta della transazione all'intera rete.
 \item Una volta ricevuta la richiesta, ogni nodo mette la richiesta nella propria mempool locale, la quale contiene un elenco di richieste di transazioni che non sono ancora state confermate e inserite in un blocco.
-\item A questo punto un nodo di mining unisce queste richieste e crea un potenziale nodo e lo fa in modo da massimizzare le commissioni sulle transazioni.\\ Il compito del nodo di mining è quello di verificare ogni richiesta di transazione, alcuni esempi possono essere transazioni senza firma dell'utente oppure con formato scorretto della richiesta, dopodichè esegue il codice della richiesta, cambiando lo stato della propria copia locale dell'Ethereum Virtual Machine.\\
+\item A questo punto un nodo di mining unisce queste richieste e crea un potenziale nodo e lo fa in modo da massimizzare le commissioni sulle transazioni.\\ Il compito del nodo di mining è quello di verificare ogni richiesta di transazione, alcuni esempi possono essere transazioni senza firma dell'utente oppure con formato scorretto della richiesta, dopodiché esegue il codice della richiesta, cambiando lo stato della propria copia locale dell'Ethereum Virtual Machine.\\
 In questo momento inizia il processo di creazione del certificato di legittimità, Proof of Work.
 \item A questo punto se tutto è andato a buon fine il miner concluderà la produzione del certificato per quel blocco, il quale contiene anche la nostra richiesta di transazione. Poi trasmetterà il blocco completo, che include oltre al certificato anche una checksum del nuovo stato dell'EVM .
 \item Gli altri nodi, una volta ricevuto il nuovo stato, vengono a conoscenza del nuovo blocco, verificano il certificato, eseguono tutte le transazioni del blocco e poi verificano che il checksum del nuovo stato dell'EVM dovuto all'esecuzione di tutte le transazioni incluse nel blocco sia uguale a quello dichiarato dal miner. Solo a questo punto, se non ci sono state delle disuguaglianze questi nodi aggiungeranno il blocco alla coda e accetteranno il nuovo stato della EVM come canonico.
@@ -261,7 +278,7 @@ Il mining di ogni transazione avviene una sola volta, ma ogni singola transazion
 \section{Dettagli sulla crittografia}
 Come abbiamo detto nella sezione precedente l'utente firma una richiesta di transazione con la chiave privata del proprio account. Questa firma avviene con l'algoritmo digitale con curva ellittica.\\
 In Ethereum, utilizziamo la crittografia a chiave pubblica (nota anche come crittografia asimmetrica).
-La chiave privata è un numero scelto a caso. Essere possessori di una chiave privata permette di avere il pieno controllo su tutti i fondi associati ai contratti con tale indirizzo. 
+Essere possessori di una chiave privata permette di avere il pieno controllo su tutti i fondi associati ai contratti con tale indirizzo. 
 La chiave privata viene utilizzata per creare le firme dimostrando la proprietà dei fondi utilizzati in una transazione. Essa deve anche rimanere segreta, perché rivelarla equivale a dare il controllo sui propri contratti e sui propri fondi. In aggiunta, se viene persa non può essere recuperata e anche i fondi saranno persi per sempre.\\
 
 \subsection{Chiave privata}
@@ -272,14 +289,15 @@ Il processo di generazione di una chiave privata è offline, non è richiesta al
 \subsection{Crittografia a curva ellittica}
 La crittografia delle curve ellittiche è un tipo di crittografia asimmetrica o a chiave pubblica basata sul problema del logaritmo discreto espresso mediante addizione e moltiplicazione sui punti di una curva ellittica.
 Ethereum utilizza la stessa identica curva ellittica, chiamata secp256k1, di Bitcoin. Ciò consente di riutilizzare molte delle librerie e degli strumenti di curve ellittiche di Bitcoin.\\
+Ethereum utilizza questa curva ellittica e un insieme di costanti matematiche, come definito in uno standard chiamato secp256k. La secp256k1 è definita dalla seguente funzione, che produce la curva ellittica sopra mostrata: $y^{2}$ mod p = $(x^{3} +7)$  mod p. Il mod p indica che questa curva è su un campo finito di ordine primo p, con $p=2^{256}-2^{32}-2^{9}-2^{8}-2^{7}-2^{6}-2^{4}-1$. \\
 \begin{figure}[htbp] 
 \begin{center}
 \includegraphics[width=4cm]{img/elliptic-curve.png} 
 \end{center}
 \caption{Curva ellittica Ethereum $y^{2}=x^{3}+7$}
 \end{figure}
-\\Ethereum utilizza questa curva ellittica e un insieme di costanti matematiche, come definito in uno standard chiamato secp256k. La secp256k1 è definita dalla seguente funzione, che produce la curva ellittica sopra mostrata: $y^{2}$ mod p = $(x^{3} +7)$  mod p. Il mod p indica che questa curva è su un campo finito di ordine primo p, con $p=2^{256}-2^{32}-2^{9}-2^{8}-2^{7}-2^{6}-2^{4}-1$. 
 
+\newpage
 \subsection{Chiave pubblica}
 Una chiave pubblica di Ethereum è un punto su una curva ellittica, il che significa che è un insieme di coordinate x e y che soddisfano l'equazione della curva ellittica.
 In termini più semplici, una chiave pubblica di Ethereum è costituita da due numeri, uniti insieme. Questi numeri sono prodotti dalla chiave privata mediante un calcolo che può andare solo in un verso . Ciò significa che è banale calcolare una chiave pubblica se si dispone della chiave privata, ma è computazionalmente difficile calcolare la chiave privata dalla chiave pubblica.\\
@@ -299,9 +317,9 @@ L'algoritmo ECDSA funziona attraverso un meccanismo di crittografia chiamato cri
 \begin{center}
 \includegraphics[width=8cm]{img/s.png} 
 \end{center}
-\caption{Meccanismo di firma ECDSA}
+\caption{Meccanismo di firma ECDSA \cite{SHA}}
 \end{figure}
-I parametri iniziali sono: l'equazione della curva ellittica usata, \textbf{G} il punto base della curva, cioè un generatore della curva ellittica e \textbf{n} l'ordine intero di \textbf{G} tale per cui $n*G=O$  Alice genera una coppia di chiavi, una privata \textbf{$d_{A}$} e una pubblica \textbf{$Q_{A}$}.\\ Per generare una firma per il messaggio \textbf{m}, Alice svolge i seguenti passi:
+I parametri iniziali sono: l'equazione della curva ellittica usata, \textbf{G} il punto base della curva, cioè un generatore della curva ellittica e \textbf{n} l'ordine intero di \textbf{G} tale per cui $n*G=O$. Ora immaginiamo che ci siano due persone denominate Alice e Bob.  Alice genera una coppia di chiavi, una privata \textbf{$d_{A}$} e una pubblica \textbf{$Q_{A}$}.\\ Per generare una firma per il messaggio \textbf{m}, Alice svolge i seguenti passi:
 \begin{enumerate}
 \item Calcola e=HASH(m), la quale è una funzione crittografica come SHA-3
 \item Sia z la stinga formata dai $L_{n}$ bit più a sinistra di $e$, e dove $L_{n}$ è la lunghezza in bit del gruppo di ordine $n$
@@ -314,7 +332,7 @@ I parametri iniziali sono: l'equazione della curva ellittica usata, \textbf{G} i
 
 Alcuni dettagli:\\
 Attraverso la computazione di s, la stringa z risultante da $HASH(m)$ deve essere convertita ad intero.\\
-COme viene stabilito dagli standard, è fondamentale che vengano selezionati k diversi per firme diverse, altrimenti al passo 6 possiamo risolvere l'equazione attraverso $d_{A}$.\\
+Come viene stabilito dagli standard, è fondamentale che vengano selezionati k diversi per firme diverse, altrimenti al passo 6 possiamo risolvere l'equazione attraverso $d_{A}$.\\
 Date due firme $(r,s)$ e $(r,s')$ impiegare la stessa $k$ per due messaggi $m$ e $m'$ si apre una vulnerabilità ad attacchi.\\
 Un aggressore può calcolare $z$ e $z'$ e visto che $s-s'=k^{-1}(z-z')$ l'aggressore può trovare $k=\frac{z-z'}{s-s'}$. Visto che $s=k^{-1}(z+rd_{A})$ l'aggressore può ora calcolare la chiave privata $d_{A}=\frac{sk-z}{r}$.
 
@@ -323,7 +341,7 @@ Un aggressore può calcolare $z$ e $z'$ e visto che $s-s'=k^{-1}(z-z')$ l'aggres
 \begin{center}
 \includegraphics[width=8cm]{img/E.png} 
 \end{center}
-\caption{Meccanismo di verifica della firma ECDSA}
+\caption{Meccanismo di verifica della firma ECDSA. \cite{SHA}}
 \end{figure}
 Ora Bob deve autenticare la firma di Alice, e questo può farlo solo essendo in possesso della chiave pubblica $Q_{A}$.\\
 Come primo passo deve verificare che $Q_{A}$ sia un punto valido della curva:
@@ -379,7 +397,7 @@ Quindi si ha la necessità di avere computer appositi in grado di risolvere ques
 \begin{center}
 \includegraphics[width=8cm]{img/pos.png} 
 \end{center}
-\caption{La Proof of Stake}
+\caption{La Proof of Stake. \cite{stake}}
 \end{figure}
 L'obiettivo dell'algoritmo è sempre convalidare i blocchi, ma la sua procedura avviene in maniera completamente differente. Infatti, esso non è un procedimento fisico, non ci sono dei computer che devono risolvere calcoli complessi ma esistono dei \textbf{validator}.
 Un algoritmo di consenso Proof of Stake può essere definito come un insieme di regole che gestiscono una rete blockchain e la creazione della sua moneta; ha quindi anche lui lo stesso obiettivo di un algoritmo Proof of Work, cioè è anch'esso una procedura per raggiungere il consenso. 
@@ -402,7 +420,7 @@ Il concetto chiave che usiamo per definire questi elementi principali sono le at
 \begin{center}
 \includegraphics[width=8cm]{img/imgPoS.png} 
 \end{center}
-\caption{Vista ideale con blocchi e attestazioni}
+\caption{Vista ideale con blocchi e attestazioni.}
 \end{figure}
 
 Si può vedere una versione idealizzata del protocollo in figura, in ogni periodo di tempo, viene creato un nuovo blocco attraverso il blocco padre che è proprio l'ultima testa della catena (che è idealmente solo l'ultimo blocco creato) e i validatori nel comitato corrispondente attestano perfettamente il nuovo blocco. In situazioni meno idealizzate, i blocchi possono biforcarsi oppure potremmo avere attestazioni mancanti e le attestazioni entreranno in gioco aiutando i validatori a decidere la testa corretta della catena.
@@ -446,13 +464,148 @@ Ora descriviamo le basi del funzionamento di Ethash:
 Le funzioni Keccak-256 e Keccak-512 sono usate durante il processo, un algoritmo da cui è stato derivato lo standard SHA-3.\\
 Esiste il vincolo che rende tale algoritmo strettamente legato alla memoria ed in particolare al bandwidth, cioè al bus, che consiste proprio nella velocità di accesso al DAG per il fetch dei dati.
 Durante il processo avvengono così tante revisioni e modifiche perchè queste operazioni rispondono alla risoluzione di problemi, ottimizzazioni, vulnerabilità e modifiche per rendere il lavoro più complesso per gli ASIC e più semplici per le GPU.\\
+
+\subsubsection{Keccak-256}
+Il meccanismo di hash crittografico Keccak-256 è un algoritmo di hash crittografico che viene utilizzato da Ethereum per proteggere i dati sensibili, come le chiavi private degli utenti. In pratica, l'algoritmo Keccak-256 converte un input di dati di lunghezza variabile in una stringa di lunghezza fissa di 256 bit, chiamata hash. Questa operazione di hash è irreversibile, il che significa che non è possibile recuperare l'input originale dai dati di output.\\
+L'algoritmo Keccak-256 utilizza una funzione di compressione iterativa per elaborare i dati di input. Essa si basa su una serie di operazioni matematiche, tra cui XOR, permutazioni e sostituzioni. In particolare, l'algoritmo Keccak-256 utilizza una funzione di permutazione chiamata "Rho" che ruota i bit all'interno di uno stato interno dell'algoritmo. Questa rotazione dei bit è il cuore della sicurezza dell'algoritmo e rende l'hash resultante molto resistente ai tentativi di hacking.\\
+La funzione rho è composta da una serie di rotazioni cicliche di bit che sono definite da un insieme di costanti predefinite. Le roatazioni sono definite come segue: per ogni valore di x e y (dove x e y sono interi), la funzione rho esegue una rotazione ciclica di y bit in direzione destra su un bit specifico all'interno dello stato interno dell'algoritmo. Il bit specifico è calcolato utilizzando la seguente formula:
+\begin{center}
+    $i = ((y + 2) * x + y)$ $mod$ $w$
+\end{center}
+dove w è la larghezza del registro interno dell'algoritmo (1600 bit per Keccak-256).
+Una volta che l'indice i è stato calcolato, la funzione rho ruota il bit all'indice i di y posizioni in direzione destra. Questo processo viene ripetuto per una serie di costanti predefinite, che determinano l'ordine delle rotazioni cicliche e il numero di bit di rotazione.\\
+Per generare l'hash Keccak-256 di un determinato input di dati, l'algoritmo esegue i seguenti passaggi:
+\begin{enumerate}
+    \item \textbf{Preparazione dei dati di input}: viene convertito l'input di dati in una serie di blocchi di 1088 bit, dove ogni blocco contiene il messaggio di input e un valore di padding.
+    \item \textbf{Assorbimento dei dati}: l'algoritmo assorbe i blocchi di dati di input in uno stato interno, utilizzando la funzione di compressione iterativa.
+    \item \textbf{Finale}: una volta che tutti i blocchi di dati di input sono stati assorbiti, l'algoritmo genera l'hash finale utilizzando la funzione di compressione e applicando alcuni passaggi di output per generare una stringa di 256 bit.
+\end{enumerate}
+In generale, l'algoritmo Keccak-256 è considerato sicuro poiché è resistente ai tentativi di hacking noti, come la collisione degli hash (cioè la creazione di due input diversi che producono lo stesso hash di output). Inoltre, l'algoritmo è stato selezionato per la sua resistenza alle attività di crittoanalisi e alle vulnerabilità di tipo backdoor.
+
+\subsubsection{Keccak-256 preudocodice}
+Per approfondire maggiormente questo algoritmo di hashing viene fornito lo pseudocodice e spiegato nel modo più dettagliato possibile, esso è stato integrato dalla documentazione ufficiale di Ethereum \cite{ETH}:
+\begin{algorithm}
+\caption{Algoritmo di hash crittografico Keccak-256}
+\begin{algorithmic}[1]
+\State Definizione delle costanti dell'algoritmo:
+\State $\quad$ const $r = 1600$, $c = 512$, $b = 1600 - c$
+\State Definizione delle costanti per la funzione di permutazione Rho:
+\State $\quad$ const RC = [0x0000000000000001, 0x0000000000008082, ...]
+\State Funzione di compressione:
+\Function{Keccak-256}{message: byte array} $\rightarrow$ {hash: byte array}
+\State Inizializzazione dello stato interno dell'algoritmo:
+\State $\quad$ var state[r/c][c] := 0
+\State $\quad$ var block := pad(message)
+\State Assorbimento dei blocchi di dati di input:
+\For{each $b$ in $block$}
+\State $\quad$ state := state $\oplus$ $b$
+\State $\quad$ state := KeccakF(state)
+\EndFor
+\State Generazione dell'hash di output:
+\State $\quad$ var hash := ""
+\For{each $row$ in $state$}
+\For{each $lane$ in $row$}
+\State $\quad$ hash := hash || $lane$
+\EndFor
+\EndFor
+\State \Return $hash$
+\EndFunction
+\State Funzione di padding:
+\Function{pad}{message: byte array} $\rightarrow$ {block: byte array}
+\State $\quad$ var block := []
+\State $\quad$ var padLen := (-len(message) - 2 * b) mod b
+\State $\quad$ var pad := [0x01] + [0x00] * (padLen - 1) + [0x80]
+\State $\quad$ block := message || pad
+\State \Return $block$
+\EndFunction
+
+\State Funzione di permutazione:
+\Function{KeccakF}{state: array} $\rightarrow$ {array}
+\For{i := 0 to 23}
+\State $\quad$ C := [state[x, y] $\oplus$ RC[i] for x := 0 to 4]
+\State $\quad$ D := [C[(x-1) mod 5] $\oplus$ rot(C[(x+1) mod 5], 1) for x := 0 to 4]
+\State $\quad$ state := state $\oplus$ D
+\State $\quad$ state := Rho(state)
+\State $\quad$ state := Pi(state)
+\State $\quad$ state := Chi(state)
+\State $\quad$ state[0, 0] := state[0, 0] $\oplus$ RC[i]
+\EndFor
+\State \Return $state$
+\EndFunction
+    \algstore{myalg}
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+    \algrestore{myalg}
+\State Funzione di rotazione:
+\Function{rot}{a: bit string, n: int} $\rightarrow$ {bit string}
+\State $\quad$ \Return $(a \gg (n \bmod w)) \lor (a \ll (w - (n \bmod w)))$
+\EndFunction
+
+\State Funzione di permutazione Rho:
+\Function{Rho}{state: array} $\rightarrow$ {array}
+\State $\quad$ var A := state
+\For{j := 0 to 23}
+\State $\quad$ var x := 1, y := 0, t := A[x, y]
+\For(i := 0 to 23)
+\State $\quad\quad$ var newX := y, newY := (2x + 3y) mod 5
+\State $\quad\quad$ t, A[newX, newY] := A[newX, newY], rot(t, (i+1)(i+2)/2)
+\State $\quad\quad$ x, y := newX, newY
+\EndFor
+\EndFor
+\State \Return $A$
+\EndFunction
+\State Funzione di permutazione Pi:
+\Function{Pi}{state: array} $\rightarrow$ {array}
+\State $\quad$ var A := state
+\State $\quad$ var B := A
+\For{x := 0 to 4}
+\For(y := 0 to 4)
+\State $\quad\quad$ newX := (3x + 2*y) mod 5
+\State $\quad\quad$ newY := (x + y) mod 5
+\State $\quad\quad$ B[x, y] := A[newX, newY]
+\EndFor
+\EndFor
+\State \Return $B$
+\EndFunction
+\State Funzione di permutazione Chi:
+\Function{Chi}{state: array} $\rightarrow$ {array}
+\State $\quad$ var A := state
+\State $\quad$ var B := A
+\For(y := 0 to 4)
+    \State $\quad\quad$ B[x, y] := C[x]
+\EndFor
+\State \Return $B$
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
 \newpage
+Come si può vedere dallo pseudocodice, l'algoritmo Keccak-256 si basa sulla funzione di permutazione KeccakF che viene eseguita su una matrice di stato di 5x5 byte. Questa funzione esegue 24 round di permutazioni su questa matrice, dove ogni round utilizza una costante RC specifica, che viene combinata con gli elementi della matrice di stato attraverso operazioni XOR. In ogni round, la matrice di stato viene anche sottoposta a tre funzioni di permutazione Rho, Pi e Chi, che combinano la posizione degli elementi della matrice di stato in modi specifici.
+
+L'algoritmo Keccak-256 è un esempio di funzione hash crittografica a flusso di cifratura, il che significa che la sua uscita viene generata in modo continuo e dipende solo dall'input corrente. L'algoritmo utilizza una serie di operazioni di permutazione e rotazione per diffondere l'input su tutta la matrice di stato, rendendolo difficile per un attaccante invertire l'operazione e determinare l'input originale. Questa proprietà di sicurezza è fondamentale per garantire la sicurezza delle transazioni sulla blockchain.\\
+Ora analizziamo lo pseudocodice:
+\begin{enumerate}
+    \item \textbf{Definizione delle costanti dell'algoritmo}: la larghezza del percorso di dati r, la larghezza della capacità c e la larghezza del percorso del bit di stato b (1600 - c).
+    \item \textbf{Definizione delle costanti per la funzione di permutazione Rho}: utilizzo di una serie di costanti chiamate RC, che vengono utilizzate all'interno della funzione di permutazione Rho. Ci sono 24 costanti RC, ognuna delle quali è una costante di 64 bit.
+    \item \textbf{Funzione di compressione}: La funzione di compressione è il nucleo dell'algoritmo. Accetta un blocco di dati di input e restituisce un blocco di output compresso. Essa inizia inizializzando lo stato interno dell'algoritmo a zero. Il blocco di dati di input viene quindi assorbito nel percorso del bit di stato attraverso l'operazione XOR. Dopo aver assorbito un blocco di dati di input, la funzione Rho viene applicata allo stato interno dell'algoritmo.
+    \item \textbf{Generazione dell'hash di output}: Dopo aver assorbito tutti i blocchi di dati di input e aver applicato la funzione di permutazione Rho, viene generato un hash di output. Il percorso del bit di stato viene concatenato in un unico flusso di bit, che costituisce l'hash di output finale.
+    \item \textbf{Funzione di padding}: Prima di assorbire i dati di input, la funzione di padding viene applicata ai dati di input. Il padding consiste in un bit di inizio, seguito da un numero variabile di bit nulli e un bit finale di 1. La lunghezza totale dei dati di input, compreso il padding, deve essere un multiplo di 512 bit.
+    \item \textbf{Divisione in blocchi}: Dopo aver applicato la funzione di padding, i dati di input vengono divisi in blocchi di 512 bit ciascuno. Se l'ultimo blocco non è completo (cioè non contiene 512 bit), viene ulteriormente riempito con bit nulli.
+    \item \textbf{Inizializzazione dello stato interno}: L'algoritmo Keccak-256 utilizza uno stato interno che viene inizializzato a zero.
+    \item \textbf{Assorbimento dei dati di input}: I blocchi di dati di input vengono assorbiti nel percorso del bit di stato tramite l'operazione XOR.
+    \item \textbf{Applicazione della funzione di permutazione Rho}: Dopo aver assorbito un blocco di dati di input, la funzione di permutazione Rho viene applicata allo stato interno dell'algoritmo. La funzione Rho utilizza le costanti RC per effettuare una serie di operazioni di rotazione su un insieme di posizioni all'interno dello stato interno.
+    \item \textbf{Generazione dell'hash di output}: Dopo aver assorbito tutti i blocchi di dati di input e aver applicato la funzione di permutazione Rho, viene generato un hash di output. Il percorso del bit di stato viene concatenato in un unico flusso di bit, che costituisce l'hash di output finale.
+    \item \textbf{Restituzione dell'hash di output}: L'hash di output viene restituito come risultato dell'algoritmo.
+\end{enumerate}
 \subsubsection{Funzionamento approfondito di Ethash}
 \begin{figure}[htbp] 
 \begin{center}
 \includegraphics[width=8cm]{img/ethash.jpg}
 \end{center}
-\caption{ethash hashing algorithm}
+\caption{Ethash hashing algorithm. \cite{etlash}}
 \end{figure}
 \begin{enumerate}
 \item Come primo passo vengono combinati insieme attraverso lo SHA-3 un header preprocessato proveniente dall'ultimo blocco ed il Nonce attuale, cioè un numero casuale di 32 bit generato dai minatori come target del hash. Quindi viene creata una sequenza di Byte lunga 128, chiamata Mix 0.
@@ -462,7 +615,6 @@ Durante il processo avvengono così tante revisioni e modifiche perchè queste o
 \item Il Mix 64 viene processato affinché si ottenga una sequenza di 32 Byte, denominata Mix Digest.
 \item La sequenza viene confrontata con una seconda sequenza target. Se la prima risulta minore del target, allora possiamo considerare il Nonce come raggiunto e inizia il processo di broadcasting sulla rete Ethereum. In caso contrario, l'algoritmo viene di nuovo eseguito con un nuovo Nonce.
 \end{enumerate}
-
 
 \subsubsection{Caratteristiche dell'algoritmo Ethash}
 \begin{itemize}
@@ -480,7 +632,7 @@ Durante il processo avvengono così tante revisioni e modifiche perchè queste o
 \textbf{SVANTAGGI}\\
 \begin{itemize}
 \item Il sistema per calcoli veloci richiede un ampio uso di memoria e potrebbe essere un problema per computer più modesti.
-\item Esistono macchinari in grado di minare estremamente facilmente ethereum e questo ha iniziato a portare a una centralizzazione del mining su Ethereum, proprio per questo sta per essere introdotto Ethereum 2.0 il quale prevede l'abbandono del Proof of Work e con lui anche Ethash come algoritmo di mining, in cambio di un Proof of Stake.  
+\item Esistono macchinari in grado di minare estremamente facilmente ethereum e questo ha iniziato a portare a una centralizzazione del mining su Ethereum, proprio per questo è stato introdotto Ethereum 2.0 il quale prevede l'abbandono del Proof of Work e con lui anche Ethash come algoritmo di mining, in cambio di un Proof of Stake.  
 \end{itemize}
 
 \subsection{Ethereum PoS}
@@ -513,9 +665,8 @@ Se la rete opera in modo ottimale, esiste sempre un solo nuovo blocco in testa a
 \begin{center}
 \includegraphics[width=10cm]{img/ghs.png}
 \end{center}
-\caption{Scelta della fork attraverso la regola di GHOST}
+\caption{Scelta della fork attraverso la regola di GHOST. \cite{genesis}}
 \end{figure}
-
 
 \subsubsection{Algoritmo LMD GHOST Fork-CHoise rule}
 La regola Greediest Heaviest Observed SubTree (GHOST) è una regola di scelta della fork introdotta da Sompolinsky e Zohar.\\ GHOST è un algoritmo avido che fa crescere la blockchain su sotto-rami per la maggior parte della sua attività.\\ Nella ricerca di un protocollo di consenso corretto, Zamfir, un altro ricercatore, introduce un adattamento naturale di GHOST, chiamiamo questa variante: Latest Message Driven Greediest Heaviest Observed SubTree (LMD GHOST), che possiamo definire solo dopo aver avuto una definizione di peso:
@@ -578,6 +729,16 @@ Un attacco del 51\% è estremamente difficile e impegnativo su una criptovaluta 
 \section{Conclusioni finali}
 In questa relazione ho cercato di approfondire in modo graduale, partendo da definizioni base fino ad arrivare ad aspetti molto profondi sulla struttura delle criptovalute, dei problemi legati ad esse e ciò che le circonda. Ho scelto questo argomento di criptografia, perchè durante le lezioni è quello che mi ha incuriosito di più e nonostante fosse un mondo completamente nuovo per me, credo ora di avere almeno le idee base su questi aspetti. In aggiunta mi ha anche incuriosito il fatto di poter iniziare a sviluppare e creare nuove applicazioni basate sulla rete Ethereum e questo è possibile direttamente online nella pagine principale del sito. Sarebbe bello avere un corso interamente dedicato a questo argomento nel piano di studi, visto quante possibilità offre.   
 
+\begin{thebibliography}{100}
+\bibitem{genesis} preethikasireddy.com, Come funziona Ethereum, www.preethikasireddy.com/post. 2017.
+\bibitem{smartContract} Salah, Khaled. (2018). IOT Access control and Authentication Management via blockchain. 
+\bibitem{albero} theledger.it, Merkle Tree, Theledger Team, 2020.
+\bibitem{ether} https://ethereum.org/it/developers/docs, Corwin Smith, 2022
+\bibitem{mine} www.javatpoint.com/how-block-hashes-work-in-blockchain, 2020
+\bibitem{block} Weber, Ingo \& Lu, Qinghua \& Tran, An Binh \& Deshmukh, Amit \& Gorski, Marek \& Strazds, Markus. (2019). A Platform Architecture for Multi-Tenant Blockchain-Based Systems. 10.1109/ICSA.2019.00019. 
+\bibitem{SHA} segger.com, emSecure, 2019
+\bibitem{stake} getbtcz.com, 2019
+\bibitem{etlash} academy.bit2me.com, José Maldonado, 15 luglio, 2020.
+\bibitem{ETH} Ethereum Yellow Paper: Wood, G. (2014). Ethereum: A secure decentralised generalised transaction ledger. Ethereum Foundation. Retrieved from https://ethereum.github.io/yellowpaper/paper.pdf
+\end{thebibliography}
 \end{document}
-
-

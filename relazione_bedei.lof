@@ -2,25 +2,26 @@
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Rappresentazione degli stati della blockchain}}{6}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Rappresentazione dei blocchi della blockchain}}{6}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Esempio di fork.}}{8}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Rappresentazione degli stati della blockchain \cite {genesis}}}{3}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rappresentazione dei blocchi della blockchain. \cite {genesis}}}{3}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Esempio di fork. \cite {genesis}}}{5}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Vista generica sul concetto di smart contract.}}{10}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vista generica sul concetto di smart contract.\cite {smartContract}}}{7}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Tipi di account.}}{14}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Contenuto informativo dell'account.}}{15}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Albero di Merkle Patricia.}}{15}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Struttura del blocco.}}{16}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Primi due blocchi di una blockchain.}}{17}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Struttura del meccanismo delle commissioni.}}{19}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Curva ellittica Ethereum $y^{2}=x^{3}+7$}}{22}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Meccanismo di firma ECDSA}}{23}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Meccanismo di verifica della firma ECDSA}}{24}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tipi di account. \cite {genesis}}}{11}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Contenuto informativo dell'account. \cite {genesis}}}{12}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Albero di Merkle Patricia. \cite {albero}}}{12}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Struttura del blocco. \cite {ether}}}{13}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Primi due blocchi di una blockchain. \cite {mine}}}{14}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Elementi del blocco. \cite {block}}}{15}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Struttura del meccanismo delle commissioni. \cite {genesis}}}{16}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Curva ellittica Ethereum $y^{2}=x^{3}+7$}}{20}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Meccanismo di firma ECDSA \cite {SHA}}}{21}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Meccanismo di verifica della firma ECDSA. \cite {SHA}}}{22}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces La Proof of Stake}}{27}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Vista ideale con blocchi e attestazioni}}{29}{}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces ethash hashing algorithm}}{31}{}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Scelta della fork attraverso la regola di GHOST}}{35}{}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Un esempio della regola di scelta del fork LMD-GHOST.}}{36}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces La Proof of Stake. \cite {stake}}}{25}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Vista ideale con blocchi e attestazioni.}}{26}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Ethash hashing algorithm. \cite {etlash}}}{33}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Scelta della fork attraverso la regola di GHOST. \cite {genesis}}}{37}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Un esempio della regola di scelta del fork LMD-GHOST.}}{38}{}%
 \addvspace {10\p@ }

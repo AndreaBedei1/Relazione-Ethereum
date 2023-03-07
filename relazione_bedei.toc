@@ -1,59 +1,62 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduzione}{4}{}%
-\contentsline {section}{\numberline {1.1}Il contesto}{4}{}%
-\contentsline {chapter}{\numberline {2}Blockchain}{6}{}%
-\contentsline {section}{\numberline {2.1}Definizione}{6}{}%
-\contentsline {section}{\numberline {2.2}Tipologie}{8}{}%
-\contentsline {chapter}{\numberline {3}Smart contract}{9}{}%
-\contentsline {section}{\numberline {3.1}Definizione}{9}{}%
-\contentsline {section}{\numberline {3.2}Caratteristiche degli smart contract}{10}{}%
-\contentsline {section}{\numberline {3.3}Funzionamento}{11}{}%
-\contentsline {section}{\numberline {3.4}Ethereum}{11}{}%
-\contentsline {section}{\numberline {3.5}Registro pubblico e privacy per Ethereum}{11}{}%
-\contentsline {section}{\numberline {3.6}Problemi di sicurezza}{12}{}%
-\contentsline {section}{\numberline {3.7}Conclusioni e casi d'uso}{12}{}%
-\contentsline {chapter}{\numberline {4}Ethereum}{13}{}%
-\contentsline {section}{\numberline {4.1}Definizione di Ethereum}{13}{}%
-\contentsline {section}{\numberline {4.2}Come nasce Ethereum?}{13}{}%
-\contentsline {section}{\numberline {4.3}Cosa può fare?}{13}{}%
-\contentsline {section}{\numberline {4.4}Tipi di account}{14}{}%
-\contentsline {section}{\numberline {4.5}Stato a livello mondiale}{15}{}%
-\contentsline {section}{\numberline {4.6}I blocchi}{16}{}%
-\contentsline {section}{\numberline {4.7}Mining}{17}{}%
-\contentsline {subsection}{\numberline {4.7.1}Contenuto di un blocco}{18}{}%
-\contentsline {subsubsection}{Funzione aggiuntiva del Nonce}{18}{}%
-\contentsline {subsection}{\numberline {4.7.2}Transazioni}{19}{}%
-\contentsline {subsubsection}{Meccanismo delle Gas Fee}{19}{}%
-\contentsline {subsection}{\numberline {4.7.3}Tempo di blocco e dimensione}{19}{}%
-\contentsline {section}{\numberline {4.8}Dettagli sul mining}{20}{}%
-\contentsline {section}{\numberline {4.9}Dettagli sulla crittografia}{21}{}%
-\contentsline {subsection}{\numberline {4.9.1}Chiave privata}{21}{}%
-\contentsline {subsection}{\numberline {4.9.2}Crittografia a curva ellittica}{22}{}%
-\contentsline {subsection}{\numberline {4.9.3}Chiave pubblica}{22}{}%
-\contentsline {subsection}{\numberline {4.9.4}Algoritmo ECDSA}{23}{}%
-\contentsline {subsubsection}{Meccanismo di firma}{23}{}%
-\contentsline {subsubsection}{Verifica della firma}{24}{}%
-\contentsline {subsubsection}{Correttezza dell'algoritmo}{25}{}%
-\contentsline {chapter}{\numberline {5}Proof of Work (PoW) vs Proof of Stake (PoS)}{26}{}%
-\contentsline {section}{\numberline {5.1}Protocolli e meccanismi di consenso}{26}{}%
-\contentsline {section}{\numberline {5.2}Algoritmo di consenso Proof of Work}{26}{}%
-\contentsline {section}{\numberline {5.3}Algoritmo di consenso Proof of Stake}{27}{}%
-\contentsline {subsection}{\numberline {5.3.1}Dettagli approfonditi del Proof of stake}{27}{}%
-\contentsline {section}{\numberline {5.4}Caratteristiche degli algoritmi di consenso}{29}{}%
-\contentsline {section}{\numberline {5.5}Ethereum}{29}{}%
-\contentsline {subsection}{\numberline {5.5.1}Ethereum PoW}{29}{}%
-\contentsline {subsubsection}{Funzionamento di Ethash}{30}{}%
-\contentsline {subsubsection}{Funzionamento approfondito di Ethash}{31}{}%
-\contentsline {subsubsection}{Caratteristiche dell'algoritmo Ethash}{32}{}%
-\contentsline {subsubsection}{Vantaggi e svantaggi dell'algoritmo}{32}{}%
-\contentsline {subsection}{\numberline {5.5.2}Ethereum PoS}{32}{}%
-\contentsline {subsubsection}{I validatori}{33}{}%
-\contentsline {subsubsection}{Finalità}{33}{}%
-\contentsline {subsubsection}{Sicurezza cripto economica}{34}{}%
-\contentsline {subsubsection}{Scelta della biforcazione}{35}{}%
-\contentsline {subsubsection}{Algoritmo LMD GHOST Fork-CHoise rule}{35}{}%
-\contentsline {subsubsection}{Vantaggi e Svantaggi dell'algoritmo}{37}{}%
-\contentsline {subsection}{\numberline {5.5.3}Attacco del 51\%}{37}{}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{39}{}%
-\contentsline {section}{\numberline {6.1}Conclusioni finali}{39}{}%
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{}%
+\contentsline {section}{\numberline {1.1}Il contesto}{1}{}%
+\contentsline {chapter}{\numberline {2}Blockchain}{3}{}%
+\contentsline {section}{\numberline {2.1}Definizione}{3}{}%
+\contentsline {section}{\numberline {2.2}Tipologie}{5}{}%
+\contentsline {chapter}{\numberline {3}Smart contract}{6}{}%
+\contentsline {section}{\numberline {3.1}Definizione}{6}{}%
+\contentsline {section}{\numberline {3.2}Caratteristiche degli smart contract}{7}{}%
+\contentsline {section}{\numberline {3.3}Funzionamento}{8}{}%
+\contentsline {section}{\numberline {3.4}Ethereum}{8}{}%
+\contentsline {section}{\numberline {3.5}Registro pubblico e privacy per Ethereum}{8}{}%
+\contentsline {section}{\numberline {3.6}Problemi di sicurezza}{9}{}%
+\contentsline {section}{\numberline {3.7}Conclusioni e casi d'uso}{9}{}%
+\contentsline {chapter}{\numberline {4}Ethereum}{10}{}%
+\contentsline {section}{\numberline {4.1}Definizione di Ethereum}{10}{}%
+\contentsline {section}{\numberline {4.2}Come nasce Ethereum?}{10}{}%
+\contentsline {section}{\numberline {4.3}Cosa può fare?}{10}{}%
+\contentsline {section}{\numberline {4.4}Tipi di account}{11}{}%
+\contentsline {section}{\numberline {4.5}Stato a livello mondiale}{11}{}%
+\contentsline {section}{\numberline {4.6}I blocchi}{13}{}%
+\contentsline {section}{\numberline {4.7}Mining}{14}{}%
+\contentsline {subsection}{\numberline {4.7.1}Contenuto di un blocco}{14}{}%
+\contentsline {subsubsection}{Funzione aggiuntiva del Nonce}{15}{}%
+\contentsline {subsection}{\numberline {4.7.2}Transazioni}{15}{}%
+\contentsline {subsubsection}{Meccanismo delle Gas Fee}{16}{}%
+\contentsline {subsubsection}{Tecnologia chiamata zk-SNARKs}{16}{}%
+\contentsline {subsection}{\numberline {4.7.3}Tempo di blocco e dimensione}{17}{}%
+\contentsline {section}{\numberline {4.8}Dettagli sul mining}{18}{}%
+\contentsline {section}{\numberline {4.9}Dettagli sulla crittografia}{19}{}%
+\contentsline {subsection}{\numberline {4.9.1}Chiave privata}{19}{}%
+\contentsline {subsection}{\numberline {4.9.2}Crittografia a curva ellittica}{19}{}%
+\contentsline {subsection}{\numberline {4.9.3}Chiave pubblica}{20}{}%
+\contentsline {subsection}{\numberline {4.9.4}Algoritmo ECDSA}{21}{}%
+\contentsline {subsubsection}{Meccanismo di firma}{21}{}%
+\contentsline {subsubsection}{Verifica della firma}{22}{}%
+\contentsline {subsubsection}{Correttezza dell'algoritmo}{23}{}%
+\contentsline {chapter}{\numberline {5}Proof of Work (PoW) vs Proof of Stake (PoS)}{24}{}%
+\contentsline {section}{\numberline {5.1}Protocolli e meccanismi di consenso}{24}{}%
+\contentsline {section}{\numberline {5.2}Algoritmo di consenso Proof of Work}{24}{}%
+\contentsline {section}{\numberline {5.3}Algoritmo di consenso Proof of Stake}{25}{}%
+\contentsline {subsection}{\numberline {5.3.1}Dettagli approfonditi del Proof of stake}{25}{}%
+\contentsline {section}{\numberline {5.4}Caratteristiche degli algoritmi di consenso}{27}{}%
+\contentsline {section}{\numberline {5.5}Ethereum}{27}{}%
+\contentsline {subsection}{\numberline {5.5.1}Ethereum PoW}{27}{}%
+\contentsline {subsubsection}{Funzionamento di Ethash}{28}{}%
+\contentsline {subsubsection}{Keccak-256}{28}{}%
+\contentsline {subsubsection}{Keccak-256 preudocodice}{29}{}%
+\contentsline {subsubsection}{Funzionamento approfondito di Ethash}{33}{}%
+\contentsline {subsubsection}{Caratteristiche dell'algoritmo Ethash}{34}{}%
+\contentsline {subsubsection}{Vantaggi e svantaggi dell'algoritmo}{34}{}%
+\contentsline {subsection}{\numberline {5.5.2}Ethereum PoS}{35}{}%
+\contentsline {subsubsection}{I validatori}{35}{}%
+\contentsline {subsubsection}{Finalità}{35}{}%
+\contentsline {subsubsection}{Sicurezza cripto economica}{36}{}%
+\contentsline {subsubsection}{Scelta della biforcazione}{37}{}%
+\contentsline {subsubsection}{Algoritmo LMD GHOST Fork-CHoise rule}{37}{}%
+\contentsline {subsubsection}{Vantaggi e Svantaggi dell'algoritmo}{39}{}%
+\contentsline {subsection}{\numberline {5.5.3}Attacco del 51\%}{39}{}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{41}{}%
+\contentsline {section}{\numberline {6.1}Conclusioni finali}{41}{}%
