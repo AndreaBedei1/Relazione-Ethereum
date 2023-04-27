@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {5.5.1}Ethereum PoW}{27}{}%
 \contentsline {subsubsection}{Funzionamento di Ethash}{28}{}%
 \contentsline {subsubsection}{Keccak-256}{28}{}%
-\contentsline {subsubsection}{Keccak-256 preudocodice}{29}{}%
+\contentsline {subsubsection}{Keccak-256 pseudocodice}{29}{}%
 \contentsline {subsubsection}{Funzionamento approfondito di Ethash}{33}{}%
 \contentsline {subsubsection}{Caratteristiche dell'algoritmo Ethash}{34}{}%
 \contentsline {subsubsection}{Vantaggi e svantaggi dell'algoritmo}{34}{}%
